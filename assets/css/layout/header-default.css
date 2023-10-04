@@ -1,0 +1,225 @@
+/*** start header ***/
+.header-default {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.96) 6.11%, rgba(0, 0, 0, 0.72) 41%, rgba(0, 0, 0, 0.48) 63.4%, rgba(0, 0, 0, 0.24) 82.67%, rgba(0, 0, 0, 0) 100%);
+    padding         : 20px 4%;
+    position        : absolute;
+    width           : 100%;
+    z-index         : 99999;
+}
+
+.header-container {
+    align-items    : center;
+    display        : var(--hm-display-flex);
+    justify-content: space-between;
+    max-width      : 1400px;
+    margin         : 0 auto;
+    width          : 100%;
+}
+
+.center-logo {
+    flex-grow : 1;
+    text-align: center;
+    width     : 98px;
+}
+
+.center-logo a {
+    display: inline-block;
+    margin : 4px 0 0 4px;
+    width  : 98px;
+}
+
+@media screen and (min-width: 768px) {
+    .center-logo {
+        width: 134px;
+    }
+
+    .center-logo a {
+        width: 134px;
+    }
+}
+
+.center-logo img {
+    object-fit: cover;
+}
+
+.header-icon {
+    cursor    : pointer;
+    height    : 36px;
+    padding   : 4px;
+    position  : relative;
+    transition: var(--hm-transition);
+    text-align: center;
+    width     : 36px;
+}
+
+.header-icon:hover .sidenav-modal {
+    opacity: 1;
+}
+
+.header-icon a {
+    display: inline-block;
+    height : 24px;
+    width  : 24px;
+}
+
+.header-icon img {
+    height    : 100%;
+    object-fit: cover;
+}
+
+.header-left,
+.header-right {
+    align-items: center;
+    display    : var(--hm-display-flex);
+    flex-basis : auto;
+    gap        : 8px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .header-left,
+    .header-right {
+        flex-basis: 225px;
+    }
+}
+
+.header-left {
+    justify-content: flex-start;
+    padding-right  : 16px;
+}
+
+.header-right {
+    justify-content: flex-end;
+    padding-left   : 16px;
+}
+
+.header-link {
+    color         : rgba(255, 255, 255, 0.7);
+    display       : inline-block;
+    font-family   : var(--hm-font-second);
+    font-size     : var(--hm-font-16);
+    font-weight   : 600;
+    letter-spacing: 0;
+    line-height   : 22px;
+    padding       : 6px 12px;
+    transition    : var(--hm-transition);
+    text-align    : center;
+}
+
+.header-link:hover {
+    color: var(--hm-white);
+}
+
+
+@media screen and (min-width: 998px) {
+    .btn-square-white {
+        display: block;
+    }
+
+    .btn-user-round {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .btn-square-white {
+        display: none;
+    }
+
+    .header-link {
+        display: none;
+    }
+
+    .btn-user-round {
+        display: block;
+    }
+}
+
+.profile-menu {
+    background: transparent;
+    position  : relative;
+}
+
+.profile-menu:hover .profile-dropdown {
+    display: block;
+}
+
+.profile-icon {
+    align-items    : center;
+    color          : rgba(255, 255, 255, 0.7);
+    display        : var(--hm-display-flex);
+    font-family    : var(--hm-font-second);
+    font-size      : var(--hm-font-16);
+    font-weight    : 600;
+    gap            : 10px;
+    justify-content: center;
+    line-height    : 22px;
+    transition     : var(--hm-transition);
+}
+
+.profile-icon:hover {
+    color: var(--hm-white);
+}
+
+.profile-image {
+    background-image: linear-gradient(4.71239rad, rgb(49, 131, 255) 1%, rgb(143, 0, 255) 96%);
+    border-radius   : 50%;
+    height          : 34px;
+    padding         : 3%;
+    width           : 34px;
+}
+
+@media screen and (min-width: 768px) {
+    .profile-image {
+        height : 36px;
+        padding: 2%;
+        width  : 36px;
+    }
+}
+
+.profile-image img {
+    border-radius: 50%;
+}
+
+.profile-dropdown {
+    background-color: rgb(25, 25, 25);
+    box-shadow      : rgba(0, 0, 0, 0.3) 0px 4px 10px;
+    border-radius   : 4px;
+    display         : none;
+    /* margin-top      : 4px; */
+    min-width       : 150px;
+    padding         : 4px;
+    position        : absolute;
+    right           : 0;
+    top             : 100%;
+    width           : 100%;
+}
+
+.profile-dropdown li {
+    width: 100%;
+}
+
+.profile-dropdown a {
+    border-top   : 2px solid transparent;
+    color        : var(--hm-white);
+    border-radius: 4px;
+    display      : inline-block;
+    font-family  : var(--hm-font-second);
+    font-size    : var(--hm-font-16);
+    font-weight  : 400;
+    line-height  : 22px;
+    padding      : 12px;
+    transition   : var(--hm-transition);
+    width        : 100%;
+}
+
+.profile-dropdown a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.profile-dropdown li:last-of-type a {
+    border-top-color: rgba(255, 255, 255, 0.3);
+    margin-top      : 4px;
+}
+
+/*** end header ***/

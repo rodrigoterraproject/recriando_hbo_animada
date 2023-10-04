@@ -1,0 +1,202 @@
+/*** generics ***/
+.account-bg {
+    background-image   : url("../../images/account-bg-gradient.jpg");
+    background-position: center center;
+    display            : var(--hm-display-flex);
+    flex-direction     : column;
+    width              : 100%;
+}
+
+.account-title {
+    font-size  : var(--hm-font-32);
+    font-weight: 300;
+    line-height: 40px;
+    margin     : 20px 0 40px;
+    text-align : center;
+}
+
+/*** start header ***/
+.account-header {
+    align-items     : center;
+    background-color: rgba(0, 0, 0, .4);
+    display         : var(--hm-display-flex);
+    min-height      : 64px;
+    justify-content : center;
+    width           : 100%;
+}
+
+/*** end header ***/
+
+/*** start main ***/
+.account-container {
+    align-items   : center;
+    display       : var(--hm-display-flex);
+    flex-direction: column;
+    height        : auto;
+    padding       : 40px 2%;
+    width         : 100%;
+}
+
+.account-title {
+    font-size  : var(--hm-font-32);
+    font-weight: 300;
+    line-height: 40px;
+    margin     : 20px 0 40px;
+    text-align : center;
+}
+
+.account-form {
+    align-items   : center;
+    display       : var(--hm-display-flex);
+    flex-direction: column;
+    padding-top   : 16px;
+    max-width     : 440px;
+    width         : 100%;
+}
+
+.form-item {
+    margin-bottom: 40px;
+    position     : relative;
+    width        : 100%;
+}
+
+.form-label,
+.form-input,
+.form-underline {
+    width: 100%;
+}
+
+.form-input {
+    background   : transparent;
+    border       : none;
+    border-bottom: 2px solid var(--hm-gray-200);
+    color        : var(--hm-white);
+    font-family  : var(--hm-font-primary);
+    font-weight  : 300;
+    font-size    : var(--hm-font-16);
+    padding      : 18px 0 10px;
+    outline      : none !important;
+    width        : 100%;
+}
+
+.form-label {
+    font-size     : var(--hm-font-18);
+    left          : 0;
+    pointer-events: none;
+    position      : absolute;
+    top           : 0;
+    transition    : all 0.3s ease;
+}
+
+.form-input:focus~.form-label,
+.form-input:valid~.form-label {
+    color    : var(--hm-gray-200);
+    font-size: var(--hm-font-14);
+    top      : -20px;
+}
+
+.form-underline {
+    background: linear-gradient(0deg, #5b16bd, #b908f6);
+    bottom    : 0;
+    left      : 0;
+    height    : 2px;
+    position  : absolute;
+    transform : scale(0);
+    transition: .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    width     : 100%;
+}
+
+.form-input:focus~.form-underline {
+    transform: scaleX(1);
+}
+
+.form-icon {
+    color   : var(--hm-gray-200);
+    display : inline-block;
+    position: absolute;
+    right   : 10px;
+    top     : 12px;
+}
+
+.form-btn:last-of-type {
+    padding-bottom: 32px;
+}
+
+#form-btn {
+    padding: 32px 0;
+}
+
+.form-btn {
+    text-align: center;
+    width     : 100%;
+}
+
+.account-register {
+    max-width : 440px;
+    text-align: center;
+    width     : 100%;
+}
+
+.account-register p,
+.account-register a {
+    color      : var(--hm-white-100);
+    font-size  : var(--hm-font-14);
+    line-height: 24px;
+}
+
+.account-register a {
+    color: var(--hm-magenta);
+}
+
+.account-register p:first-of-type {
+    padding: 14px 0;
+}
+
+/*** end main ***/
+
+/*** start footer ***/
+.footer {
+    align-items     : center;
+    background-color: rgba(3, 3, 40, .8);
+    display         : var(--hm-display-flex);
+    justify-content : center;
+    min-height      : 100px;
+    padding         : 12px 2%;
+    width           : 100%;
+}
+
+.footer-list {
+    align-items    : start;
+    display        : var(--hm-display-flex);
+    flex-direction : column;
+    justify-content: center;
+    width          : 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-list {
+        align-items   : center;
+        flex-direction: row;
+    }
+}
+
+.footer-list li {
+    display    : inline-block;
+    line-height: 24px;
+    padding    : 8px 12px;
+    white-space: nowrap;
+}
+
+.footer-list a {
+    align-items    : center;
+    color          : var(--hm-magenta);
+    display        : flex;
+    gap            : 5px;
+    justify-content: center;
+}
+
+.footer-list a span {
+    font-size: var(--hm-font-12);
+}
+
+/*** end footer ***/

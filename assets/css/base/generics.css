@@ -1,0 +1,68 @@
+html,
+body {
+    height         : 100%;
+    scroll-behavior: smooth;
+    width          : 100%;
+}
+
+body {
+    color      : var(--hm-white);
+    font-family: var(--hm-font-primary);
+    font-weight: 300;
+    font-size  : 16px;
+    line-height: 1.6;
+}
+
+#index {
+    background-color: var(--hm-bg-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+.txt-small {
+    font-size  : var(--hm-font-12);
+    font-weight: 300;
+    line-height: 16px;
+    padding    : 0 2%;
+}
+
+.container {
+    margin   : 0 auto;
+    max-width: 1140px;
+    width    : 100%;
+}
+
+hr.line {
+    border    : 0;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+hr.line-magenta {
+    background-color: var(--hm-pink);
+    border-width    : 2px;
+    margin          : 0 auto 20px;
+    width           : 50px;
+}
+
+div.background-default {
+    background-attachment: fixed;
+    background-repeat    : no-repeat;
+    background-size      : cover;
+    background-position  : center center;
+    height               : 100%;
+    width                : 100%;
+}
+
+@media (orientation: landscape) {
+    .background-default {
+        background: url("../../images/default-bg-3840x2160.png");
+    }
+}
+
+@media (orientation: portrait) {
+    .background-default {
+        background: url("../../images/default-mobile-bg-1920x1536.png");
+    }
+}

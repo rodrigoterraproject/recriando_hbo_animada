@@ -1,0 +1,33 @@
+.section {
+    background-position: center center;
+    background-size    : cover;
+    height             : auto;
+    padding            : 48px 0;
+    width              : 100%;
+    z-index            : 1;
+}
+
+@media screen and (min-width: 998px) {
+    .section {
+        min-height: 100%;
+    }
+}
+
+.section-header {
+    padding   : 24px 1%;
+    text-align: center;
+}
+
+.section-title {
+    font-size  : var(--hm-font-24);
+    font-weight: 500;
+    line-height: 38px;
+    margin     : 8px 0 8px;
+    text-align : center;
+}
+
+@media screen and (min-width: 768px) {
+    .section-title {
+        font-size: var(--hm-font-32);
+    }
+}
